@@ -10,8 +10,8 @@ export const ImageGalleryitems = ({ webformatURL, tags, onToggle, largeImageURL}
 }
 
 ImageGalleryitems.propTypes = {
-    webformatURL: PropTypes.string,
-    tags: PropTypes.string,
-    largeImageURL: PropTypes.string,
-    onToggle: PropTypes.func
+    webformatURL: PropTypes.string.isRequired,
+    tags: PropTypes.string.isRequired,
+    largeImageURL: PropTypes.string.isRequired,
+    onToggle: PropTypes.func.isRequired
 };

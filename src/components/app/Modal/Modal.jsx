@@ -8,6 +8,11 @@ const modalRoot = document.querySelector('#modal-root')
 
 export default class Modal extends Component { 
     
+    static propTypes = {
+    largeImg: PropTypes.string.isRequired,
+    onToggle: PropTypes.func.isRequired,
+    };
+    
     componentDidMount() { 
         window.addEventListener('keydown', this.handleKeyDown)
     }
@@ -36,10 +41,7 @@ export default class Modal extends Component {
     }
 }
 
-Modal.propTypes = {
-    largeImg: PropTypes.string,
-    onToggle: PropTypes.func,
-};
+
 
 
 

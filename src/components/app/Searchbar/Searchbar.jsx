@@ -7,6 +7,11 @@ import { toast } from "react-toastify";
 
 export default class Searchbar extends Component {
 
+    static propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+    
+    };
+
     state = { 
         imgName: '',
     }
@@ -50,7 +55,3 @@ export default class Searchbar extends Component {
     }
 }
 
-Searchbar.propTypes = {
-    onSubmit: PropTypes.func,
-    
-};
